@@ -11,7 +11,7 @@
 ### **Pasos de instalación:**
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/usuario/repo.git
+   git clone https://github.com/full710/PreEntrega2-Gonzalez.git
 2. **Instala las dependencias del proyecto:**
    ```bash
    npm install
