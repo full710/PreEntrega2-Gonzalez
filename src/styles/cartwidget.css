@@ -1,0 +1,16 @@
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    width: 60px;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+.cart img{
+    width:25px;
+    margin-top: 2px;
+    cursor: pointer;
+}

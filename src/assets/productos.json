@@ -1,0 +1,94 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Almohadón Benji",
+        "categoria": "doble",
+        "descripcion": [
+            "Almohada en color negro con bolsillos en color verde.",
+            "Incluye vasos y balde en color negro. ",
+            "Tamaño: 45cm x 30cm."
+        ],
+        "precio": 19.99,
+        "imagenes": [
+            "/src/assets/productsImg/almohadónBenji/AlmohadónBenji1.webp",
+            "/src/assets/productsImg/almohadónBenji/AlmohadónBenji2.webp"
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Almohadón Netflix",
+        "categoria":"doble",
+        "descripcion": [
+            "Almohada en color negro con bolsillos en rojo.",
+            "Incluye vasos y balde en color negro.",
+            "Tamaño: 45cm x 30cm."
+        ],
+        "precio": 39.99,
+        "imagenes": [
+            "/src/assets/productsImg/almohadónNetflix/AlmohadónNetflix1.webp",
+            "/src/assets/productsImg/almohadónNetflix/AlmohadónNetflix2.webp"
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "Almohadón Pink",
+        "categoria":"simple",
+        "descripcion": [
+            "Almohada y bolsillos en color rosa.",
+            "Incluye vaso en color rosa con glitter y balde en color rosa.",
+            "Tamaño: 30cm largo x 20cm ancho"
+        ],
+        "precio": 59.99,
+        "imagenes": [
+            "/src/assets/productsImg/almohadónPink/AlmohadónPink1.webp",
+            "/src/assets/productsImg/almohadónPink/AlmohadónPink2.webp"
+        ]
+      },
+      {
+        "id": 4,
+        "nombre": "Almohadón Green",
+        "categoria": "simple",
+        "descripcion": [
+            "Almohada en color verde con bolsillos en color gris.",
+            "Incluye vasos y balde en color negro.",
+            "Tamaño: 45cm x 30cm."
+        ],
+        "precio": 14.99,
+        "imagenes": [
+            "/src/assets/productsImg/almohadónGreenDoble/AlmohadónGreenDoble1.webp",
+            "/src/assets/productsImg/almohadónGreenDoble/AlmohadónGreenDoble2.webp"
+        ]
+      },
+      {
+        "id": 5,
+        "nombre": "Almohadón Black&White",
+        "categoria":"doble",
+        "descripcion": [
+            "Almohada y bolsillos en color negro.",
+            "Incluye vasos en color negro y balde en color blanco.",
+            "Tamaño: 45cm x 30cm."
+        ],
+        "precio": 49.99,
+        "imagenes": [
+            "/src/assets/productsImg/almohadónBlack&White/AlmohadónBlack&White1.webp",
+            "/src/assets/productsImg/almohadónBlack&White/AlmohadónBlack&White2.webp"
+        ]
+      },
+      {
+        "id":6,
+        "nombre":"Almohadón TotalBlack",
+        "categoria":"simple",
+        "descripcion": [
+            "Almohada y bolsillos en color negro.",
+            "Incluye vaso y balde en color negro.",
+            "Tamaño: 30cm largo x 20cm ancho"
+        ],
+        "precio":14.99,
+        "imagenes": [
+            "/src/assets/productsImg/almohadónTotalBlack/AlmohadónTotalBlack1.webp",
+            "/src/assets/productsImg/almohadónTotalBlack/AlmohadónTotalBlack2.webp"
+        ]
+      }
+    ]
+  }
