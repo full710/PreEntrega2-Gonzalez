@@ -29,6 +29,7 @@ const ItemDetailContainer = () => {
 
     if (loading) {
         return <p>Cargando producto...</p>
+        
     }
 
     return <ItemDetail product={product} />

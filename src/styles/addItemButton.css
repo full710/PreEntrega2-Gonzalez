@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+}
+.selectQuantityContainer{
+    background-color: rgba(255, 166, 0, 0.158);
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgba(255, 166, 0, 0.459);
+    border-radius: 20px;
+}
+.selectQuantity{
+    background-color: rgba(255, 166, 0, 0.466);
+    border: none;
+    border-radius: 100%;
+    margin: 0px 3px 0px 3px;
+}
+.selectQuantity:hover{
+    scale: 1.1;
+}
+.addButton{
+    height: 40px;
+    width: 150px;
+    margin-left: 25px;
+    background-color: rgba(255, 166, 0, 0.158);
+    border: 1px solid rgba(255, 166, 0, 0.459);
+    border-radius: 20px;
+    font-size: 15px;
+}
+.addButton:hover{
+    scale: 1.04;
+}

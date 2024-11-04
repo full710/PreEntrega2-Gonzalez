@@ -1,6 +1,7 @@
 import '../styles/itemDetail.css'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import AddItemButton from './AddItemButton'
 
 const ItemDetail = ({ product }) => {
     const { nombre, categoria, descripcion, precio, imagenes } = product
@@ -46,6 +47,7 @@ const ItemDetail = ({ product }) => {
                     <div className='productPrice'>
                         <h2>Precio: ${precio}</h2>
                     </div>
+                    <AddItemButton/>
                 </div>
             </div>
             <button>

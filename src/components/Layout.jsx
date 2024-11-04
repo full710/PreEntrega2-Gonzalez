@@ -5,13 +5,13 @@ import '../styles/layout.css'
 const Layout = ({ children }) => {
 
     return (
-        <>
+        <div className='layout'>
             <NavBar />
-            <div className='layaut'>
+            <div>
                 {children}
             </div>
             <Footer />
-        </>
+        </div>
     )
 }
 
