@@ -1,6 +1,7 @@
 .itemsContainer{
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: space-around;
 }

@@ -9,10 +9,10 @@ const Item = ({ item }) => {
     <div className='itemContainer'>
       <img src={item.image1} alt="" />
       <h2>{item.title}</h2>
-        <span>${item.price}</span>
-        <NavLink to={`/detail/${item.id}`}>
-          <button>Detail</button>
-        </NavLink>
+      <span>${item.price}</span>
+      <NavLink to={`/detail/${item.id}`}>
+        <button>Ver detalles</button>
+      </NavLink>
     </div>
   )
 }
