@@ -1,53 +1,36 @@
 import React, { useState, useEffect } from 'react'
-import productsData from "../assets/productos.json"
 import '../styles/itemlistcontainer.css'
-import Item from './Item'
 import { useParams } from "react-router-dom"
+import { collection, getDocs } from 'firebase/firestore'
+import { db } from '../firebase/config'
+import Item from './Item'
+import ItemList from './ItemList'
+
 
 const ItemListContainer = () => {
 
-  const [product, setProduct] = useState([])
+  const [products, setProducts] = useState([])
   const { categoryId } = useParams()
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const simulateApi = new Promise((resolve) => {
-      setTimeout(()=>{
-        let productsFiltered
-        const products = productsData.productos
-        if (categoryId) {
-          productsFiltered = products.filter(product => product.categoria === categoryId)
-        } else {
-          productsFiltered = products
-        }
-        resolve(productsFiltered)
-      },2000)
-      
-    })
-    simulateApi
-    .then((productsFiltered) => {
-      setProduct(productsFiltered)
-      setLoading(false)
-    })
-    .catch((error) => {
-      console.log('Error al cargar los datos', error);
-      setLoading(false)
-    })
+
+    (async() =>{
+      let productsFiltered = []
+
+      const querySnapshot = await getDocs(collection(db, "products"))
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+        productsFiltered.push({id: doc.id, ...doc.data()})
+      })
+      setProducts(productsFiltered)
+
+    })()
   }, [categoryId])
-  if (loading){
-    return <p>Cargando productos...</p>
-  }
   return (
     <div>
       <div className='itemsContainer'>
-
-        {product.map((prod) => {
-          return (
-            <Item item={prod} key={prod.id} />
-          )
-        }
-        )}
-
+        <ItemList products={products} />
       </div>
     </div>
   )
