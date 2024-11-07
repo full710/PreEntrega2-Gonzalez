@@ -1,38 +1,63 @@
-.container{
+
+.container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin-top: 40px;
-}
-.selectQuantityContainer{
-    background-color: white;
-    width: 100px;
+    margin: 20px;
+  }
+  
+  
+  .selectQuantityContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .selectQuantity {
+    font-size: 1.5rem;
+    width: 40px;
     height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid rgba(255, 166, 0, 0.459);
-    border-radius: 20px;
-}
-.selectQuantity{
-    background-color: rgba(255, 166, 0, 0.466);
+    background-color: #ffffff;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    color: #007BFF;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .selectQuantity:hover {
+    background-color: #007BFF;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  .quantityDisplay {
+    font-size: 1.5rem;
+    margin: 0 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+ 
+  .addButton {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 100%;
-    margin: 0px 3px 0px 3px;
-}
-.selectQuantity:hover{
-    scale: 1.1;
-}
-.addButton{
-    height: 40px;
-    width: 150px;
-    margin-left: 25px;
-    background-color: rgba(255, 166, 0, 0.158);
-    border: 1px solid rgba(255, 166, 0, 0.459);
-    border-radius: 20px;
-    font-size: 15px;
-}
-.addButton:hover{
-    scale: 1.04;
-}
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px;
+  }
+  
+  .addButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  

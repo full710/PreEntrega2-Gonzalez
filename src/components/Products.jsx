@@ -4,13 +4,15 @@ import '../styles/products.css'
 
 const Products = () => {
   return (
-    <div className='categoriaContainer'>
-        <button className='buttonProducts'>
-            <NavLink className='doble' to="/Products/category/doble">Almohadónes dobles</NavLink>
-        </button>
-        <button className='buttonProducts'>
-            <NavLink className='simple' to="/Products/category/simple">Almohadónes simples</NavLink>
-        </button>
+    <div className="categoria-container">
+      <div className="button-container">
+        <NavLink className="button-products doble" to="/Products/category/doble">
+          Almohadones Dobles
+        </NavLink>
+        <NavLink className="button-products simple" to="/Products/category/simple">
+          Almohadones Simples
+        </NavLink>
+      </div>
     </div>
   )
 }

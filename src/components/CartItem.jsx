@@ -9,7 +9,7 @@ const CartItem = ({ item, onDelete }) => {
             <p>{item.description}</p>
             <p>{item.price}</p>
             <p>{item.quantity}</p>
-            <button onClick={onDelete}>Delete</button>
+            <button onClick={onDelete}>Eliminar</button>
         </div>
     )
 }

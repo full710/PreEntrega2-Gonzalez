@@ -8,8 +8,8 @@ const CartWidget = () => {
 
   return (
     <div className='cart'>
-        <img src={cart} alt="cart" />
-        <span className='quantityCart'>({quantity})</span> {/* Muestra la cantidad total de productos */}
+      <img src={cart} alt="cart" />
+      <span className='quantityCart'>({quantity})</span>
     </div>
   )
 }
