@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../styles/cartwidget.css'
 import cart from '../assets/cart.svg'
+import { Cart as CartContext } from '../context/CartProvider'
 
 const CartWidget = () => {
+  const { quantity } = useContext(CartContext)
+
   return (
     <div className='cart'>
         <img src={cart} alt="cart" />
-        <span>(0)</span>    
+        <span className='quantityCart'>({quantity})</span> {/* Muestra la cantidad total de productos */}
     </div>
   )
 }

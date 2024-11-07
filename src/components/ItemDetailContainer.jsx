@@ -1,38 +1,31 @@
-import React, { useEffect, useState } from "react"
-import products from "../assets/productos.json"
-import ItemDetail from "./ItemDetail"
-import { useParams } from "react-router-dom"
+import React, { useEffect, useState } from "react";
+import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
+import { db } from "../firebase/config";
+import { doc, getDoc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState(null)
+    const [product, setProduct] = useState(null);
     const { id } = useParams();
-    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        const simulateApi = new Promise((resolve) => {
-            setTimeout(() =>{
-                const productData = products.productos
-                const selectProduct = productData.find(product => product.id === parseInt(id))
-                resolve(selectProduct)
-            },2000)
-        })
-        simulateApi
-        .then((selectProduct)=>{
-            setProduct(selectProduct)
-            setLoading(false)
-        })
-        .catch((error)=>{
-            console.log('Error al cargar los datos',error);
-            setLoading(false)
-        })
-    }, [id])
+        (async () => {
+            try {
+                const docRef = doc(db, "products", id);
+                const docSnap = await getDoc(docRef);
 
-    if (loading) {
-        return <p>Cargando producto...</p>
-        
-    }
+                if (docSnap.exists()) {
+                    setProduct({ ...docSnap.data(), id });
+                } else {
+                    console.log('El documento no existe');
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        })();
+    }, [id]);
 
-    return <ItemDetail product={product} />
-}
+    return product ? <ItemDetail product={product} /> : <div>Loading...</div>;
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

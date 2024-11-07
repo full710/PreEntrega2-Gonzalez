@@ -26,7 +26,7 @@ const NavBar = () => {
                         <li><Link className='linkNav' to={'/Information'}>Nosotros</Link></li>
                     </ul>
                     <div className='cartNavbar'>
-                        <Link to={"./CartWidget"}><CartWidget /></Link>
+                        <Link to={"./cart"}><CartWidget /></Link>
                     </div>
                 </div>
             </div>

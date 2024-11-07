@@ -19,7 +19,8 @@
   }
   
   .mainImage {
-    width: 500px; 
+    width: 500px;
+    max-height: 500px;
     height: auto;
   }
   
@@ -33,7 +34,7 @@
   
   .imgThumbnail {
     width: 100px; 
-    height: auto;
+    max-height: 100px;
     cursor: pointer;
     opacity: 0.7; 
     transition: opacity 0.3s ease;
@@ -64,7 +65,7 @@
     width: 175px;
     height: 35px;
     margin: 10px;
-    background-color: rgba(255, 166, 0, 0.158);
+    background-color: white;
     border: 1px solid rgba(255, 166, 0, 0.459);
     border-radius: 20px;
   }
