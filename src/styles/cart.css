@@ -91,3 +91,59 @@
 .cartPurchaseButton:hover {
     background-color: #45a049;
 }
+.checkoutModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkoutModalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .formGroup input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .formActions button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formActions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

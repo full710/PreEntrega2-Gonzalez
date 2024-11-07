@@ -60,4 +60,15 @@
     background-color: #0056b3;
     transform: scale(1.05);
   }
+  .outOfStockMessage {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .addButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
   

@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react"
 
-// 1. Crear el contexto
+
 export const Cart = createContext()
 
 const CartProvider = ({ children }) => {
@@ -35,14 +35,18 @@ const CartProvider = ({ children }) => {
         return cart.some(cartProduct => cartProduct.id === productId)
     }
 
-    // Actualiza la cantidad total cada vez que cambia el carrito
+    const clearCart = () => {
+        setCart({})
+    }
+
+
     useEffect(() => {
         const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0)
         setQuantity(totalQuantity)
     }, [cart])
 
     return (
-        <Cart.Provider value={{ cart, addCart, removeFromCart, quantity }}>
+        <Cart.Provider value={{ cart, addCart, removeFromCart, quantity, clearCart }}>
             {children}
         </Cart.Provider>
     )
