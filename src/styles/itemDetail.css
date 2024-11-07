@@ -49,6 +49,26 @@
     justify-content: center;
   }
   .productPrice{
-    margin-top: 40px;
-    
-  } 
+    margin-top: 40px; 
+  }
+  .descriptionContainer{
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  .backProducts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .backProducts button{
+    width: 175px;
+    height: 35px;
+    margin: 10px;
+    background-color: rgba(255, 166, 0, 0.158);
+    border: 1px solid rgba(255, 166, 0, 0.459);
+    border-radius: 20px;
+  }
+  .no-underline{
+    text-decoration: none;
+    color: black;
+  }
