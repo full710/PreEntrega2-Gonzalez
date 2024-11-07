@@ -1,6 +1,6 @@
 import './global/styles.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Layout from './components/Layout'
+import Layout from './components/layout'
 import ItemListContainer from './components/ItemListContainer'
 import Contact from './components/Contact'
 import Information from './components/Information'
