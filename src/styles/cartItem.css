@@ -1,7 +1,7 @@
 .cartItem {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
