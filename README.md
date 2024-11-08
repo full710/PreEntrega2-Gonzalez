@@ -1,4 +1,6 @@
 
+**Nota:** Actualmente hay un problema con las rutas de las imágenes en deploy de Vercel, lo que causa que estas no se muestren correctamente en producción. Para ver el proyecto funcionando completamente, incluyendo las imágenes, se recomienda clonar el repositorio y probarlo en local siguiendo los pasos de [Instalación](#instalación).
+
 # SomosTrailer - E-commerce de Almohadones Pochocleros
 
 SomosTrailer es una aplicación de comercio electrónico donde los usuarios pueden explorar, seleccionar y comprar almohadones pochocleros con compartimientos para bebidas y snacks. Este proyecto está construido en React y Firebase, e incluye funciones de carrito de compras, gestión de inventario y generación de factura.
