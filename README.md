@@ -7,13 +7,20 @@ SomosTrailer es una aplicación de comercio electrónico donde los usuarios pued
 
 ## Tabla de contenidos
 
-1. [Características](#características)
-2. [Tecnologías](#tecnologías)
-3. [Instalación](#instalación)
-4. [Uso](#uso)
-5. [Estructura del Proyecto](#estructura-del-proyecto)
-6. [Contribución](#contribución)
-7. [Licencia](#licencia)
+1. [Despliegue en Vercel](#despliegue-en-vercel)
+2. [Características](#características)
+3. [Tecnologías](#tecnologías)
+4. [Instalación](#instalación)
+5. [Uso](#uso)
+6. [Estructura del Proyecto](#estructura-del-proyecto)
+7. [Contribución](#contribución)
+8. [Licencia](#licencia)
+
+## Despliegue en Vercel
+
+El proyecto está desplegado en Vercel y puede visualizarse en el siguiente enlace:
+
+- [SomosTrailer en Vercel](https://somos-trailer-pf.vercel.app/)
 
 ## Características
 
