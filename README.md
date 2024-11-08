@@ -1,5 +1,6 @@
 
 **Nota:** Actualmente hay un problema con las rutas de las imágenes en deploy de Vercel, lo que causa que estas no se muestren correctamente en producción. Para ver el proyecto funcionando completamente, incluyendo las imágenes, se recomienda clonar el repositorio y probarlo en local siguiendo los pasos de [Instalación](#instalación).
+**Correccion:** Se corrigió este problema quitando las imágenes de la aplicación y trayéndolas directamente desde un servidor online.
 
 # SomosTrailer - E-commerce de Almohadones Pochocleros
 
