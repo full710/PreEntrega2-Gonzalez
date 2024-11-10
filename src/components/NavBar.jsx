@@ -1,6 +1,5 @@
 import React from 'react'
-import logo from "../assets/logo.webp"
-import lupaBuscador from "../assets/lupaBuscador.svg"
+import logo from "../assets/logo.png"
 import '../styles/navbar.css'
 import CartWidget from './CartWidget'
 import { Link, Routes } from 'react-router-dom'
