@@ -33,11 +33,11 @@
   }
   
   .button-products.simple {
-    background-color: #4CAF50;
+    background-color: #f68d0f;
   }
   
   .button-products:hover {
-    background-color: #e57c0f;
+    background-color: #4CAF50;
     transform: scale(1.05);
   }
   
